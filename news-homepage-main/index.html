@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/presets.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <nav class="navbar">
+      <section class="news-logo">
+        <img src="./assets/images/logo.svg" alt="logo">
+      </section>
+      <ul class="nav-components">
+        <a href="/" class="txt-sm light-gray weight-400">Home</a>
+        <a href="/" class="txt-sm light-gray weight-400">New</a>
+        <a href="/" class="txt-sm light-gray weight-400">Popular</a>
+        <a href="/" class="txt-sm light-gray weight-400">Trending</a>
+        <a href="/" class="txt-sm light-gray weight-400">Categories</a>
+      </ul>
+    </nav>
+    <section class="news-container grid">
+      <!-- main content of news page -->
+      <header class="grid-items grid-item-1 grid">
+        <picture>
+          <!-- responsive header image here -->
+          <source media="(min-width: 420px)" srcset="./assets/images/image-web-3-desktop.jpg">
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="header image" style="width: 100%;">
+        </picture>
+        <h1 class="weight-800 txt-2xl">The Bright Future of Web 3.0?</h1>
+        <div class="head-text">
+          <p class="head-desc light-gray weight-400">We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+          <input type="button" value="READ MORE" class="btn-base btn-red">
+        </div>
+      </header>
+      <aside class="grid-items grid-item-2 grid">
+        <h2 class="weight-700 txt-lg txt-yellow">New</h2>
+        <div class="post">
+          <h5 class="post-title txt-white weight-700 txt-md">Hydrogen VS Electric Cars</h5>
+          <p class="light-gray weight-400">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="post">
+          <h5 class="post-title txt-white weight-700 txt-md">The Downsides of AI Artistry</h5>
+          <p class="light-gray weight-400">What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <div class="post">
+          <h5 class="post-title txt-white weight-700 txt-md">Is VC Funding Drying Up?</h5>
+          <p class="light-gray weight-400">Private funding by VC firms is down 50% YOY. We take a look at what that
+            means.</p>
+        </div>
+        <!-- <section class="aside-post grid"></section> -->
+      </aside>
+      <section class="cards flex">
+        <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs">
+        <div class="card-text">
+          <h4 class="card-num light-gray txt-xl">01</h4>
+          <p class="card-title very-darker-blue weight-700">Reviving Retro PCs</p>
+          <p class="card-desc light-gray weight-400">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </section>
+      <section class="cards flex">
+        <img src="./assets/images/image-top-laptops.jpg" alt="Top Laptops">
+        <div class="card-text">
+          <h4 class="card-num light-gray txt-xl">02</h4>
+          <p class="card-title very-darker-blue weight-700">Top 10 Laptops of 2022</p>
+          <p class="card-desc light-gray weight-400">Our best picks for various needs and budgets.</p>
+        </div>
+      </section>
+      <section class="cards flex">
+        <img src="./assets/images/image-gaming-growth.jpg" alt="Growth of Gaming">
+        <div class="card-text">
+          <h4 class="card-num light-gray txt-xl">03</h4>
+          <p class="card-title very-darker-blue weight-700">The Growth of Gaming</p>
+          <p class="card-desc light-gray weight-400">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </section>
+      <!-- <section class="grid-items grid-item-3 grid"></section> -->
+    </section>
+  </main>
+
+
+  <!-- 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
